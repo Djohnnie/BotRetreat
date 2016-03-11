@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Syntax name="C#">
+  <HighlightWordsRule name="Reserved language words">
+    <Words>
+      if else switch case break do while for foreach in as is typeof new class void using namespace
+      public private protected internal partial get set return readonly override virtual var
+    </Words>
+    <IgnoreCase>false</IgnoreCase>
+    <Foreground>#0707FD</Foreground>
+    <FontWeight>Bold</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightWordsRule>
+
+  <HighlightWordsRule name="Standard packages">
+    <Words>
+      Registry RegistryHive RegistryKey RegistryValueOptions RegistryKeyPermissionCheck RegistryOptions
+      RegistryValueKind RegistryView SafeFileHandle SafeRegistryHandle SafeWaitHandle SafeHandleZeroOrMinusOneIsInvalid
+      SafeHandleMinusOneIsInvalid CriticalHandleZeroOrMinusOneIsInvalid CriticalHandleMinusOneIsInvalid SafeAccessTokenHandle
+      AggregateException AppContext Object ICloneable Action Action Action Action Action Func Func Func Func Func Action
+      Action Action Action Func Func Func Func Comparison Converter Predicate Array ArraySegment IComparable IComparable
+      IEquatable Tuple Tuple Tuple Tuple Tuple Tuple Tuple Tuple Tuple String StringSplitOptions StringComparer StringComparison
+      Exception DateTime DateTimeKind DateTimeOffset SystemException OutOfMemoryException StackOverflowException DataMisalignedException
+      ExecutionEngineException Delegate MulticastDelegate MemberAccessException Activator AccessViolationException ApplicationException
+      ResolveEventArgs AssemblyLoadEventArgs ResolveEventHandler AssemblyLoadEventHandler AppDomainInitializer AppDomain
+      CrossAppDomainDelegate AppDomainManagerInitializationOptions AppDomainManager _AppDomain AppDomainSetup IAppDomainSetup
+      LoaderOptimization LoaderOptimizationAttribute AppDomainUnloadedException ActivationContext ApplicationIdentity
+      ApplicationId ArgumentException ArgumentNullException ArgumentOutOfRangeException ArgIterator ArithmeticException
+      ArrayTypeMismatchException AsyncCallback Attribute AttributeTargets AttributeUsageAttribute BadImageFormatException
+      BitConverter Boolean Buffer Byte CannotUnloadAppDomainException Char CharEnumerator CLSCompliantAttribute
+      TypeUnloadedException __ComObject Console ConsoleCancelEventHandler ConsoleCancelEventArgs ConsoleColor
+      ConsoleKey ConsoleKeyInfo ConsoleModifiers ConsoleSpecialKey ContextMarshalException Base64FormattingOptions
+      Convert ContextBoundObject ContextStaticAttribute DayOfWeek DBNull Decimal DivideByZeroException Double
+      DuplicateWaitObjectException Enum EntryPointNotFoundException DllNotFoundException EnvironmentVariableTarget
+      Environment EventArgs EventHandler EventHandler FieldAccessException FlagsAttribute FormatException FormattableString
+      GCCollectionMode GCNotificationStatus GC Guid IAsyncResult ICustomFormatter IDisposable IFormatProvider IFormattable
+      IndexOutOfRangeException IObservable IObserver IProgress InsufficientMemoryException InsufficientExecutionStackException
+      Lazy Int16 Int32 Int64 IntPtr InvalidCastException InvalidOperationException InvalidProgramException InvalidTimeZoneException
+      IConvertible IServiceProvider LocalDataStoreSlot MarshalByRefObject Math MethodAccessException MidpointRounding
+      MissingFieldException MissingMemberException MissingMethodException MulticastNotSupportedException NonSerializedAttribute
+      NotFiniteNumberException NotImplementedException NotSupportedException NullReferenceException ObjectDisposedException
+      ObsoleteAttribute OperatingSystem OperationCanceledException OverflowException ParamArrayAttribute PlatformID
+      PlatformNotSupportedException Progress Random RankException RuntimeArgumentHandle RuntimeTypeHandle RuntimeMethodHandle
+      RuntimeFieldHandle ModuleHandle SByte SerializableAttribute Single STAThreadAttribute MTAThreadAttribute TimeoutException
+      TimeSpan TimeZone TimeZoneInfo TimeZoneNotFoundException Type TypeAccessException TypeCode TypedReference TypeInitializationException
+      TypeLoadException UInt16 UInt32 UInt64 UIntPtr UnauthorizedAccessException UnhandledExceptionEventArgs UnhandledExceptionEventHandler
+      ValueType Version Void WeakReference WeakReference ThreadStaticAttribute Nullable Nullable AssemblyHash AssemblyHashAlgorithm
+      AssemblyVersionCompatibility BinaryReader BinaryWriter BufferedStream Directory DirectoryInfo SearchOption DirectoryNotFoundException
+      DriveType DriveInfo DriveNotFoundException EndOfStreamException File FileAccess FileInfo FileLoadException FileMode FileNotFoundException
+      FileOptions FileShare FileStream FileSystemInfo FileAttributes IOException MemoryStream Path PathTooLongException SeekOrigin Stream
+      StreamReader StreamWriter StringReader StringWriter TextReader TextWriter UnmanagedMemoryAccessor UnmanagedMemoryStream IsolatedStorageScope
+      IsolatedStorage IsolatedStorageFileStream IsolatedStorageException IsolatedStorageSecurityOptions IsolatedStorageSecurityState
+      INormalizeForIsolatedStorage IsolatedStorageFile SecurityElement XmlSyntaxException SuppressUnmanagedCodeSecurityAttribute
+      UnverifiableCodeAttribute AllowPartiallyTrustedCallersAttribute PartialTrustVisibilityLevel SecurityCriticalScope SecurityCriticalAttribute
+      SecurityTreatAsSafeAttribute SecuritySafeCriticalAttribute SecurityTransparentAttribute SecurityRuleSet SecurityRulesAttribute
+      CodeAccessPermission IEvidenceFactory IPermission ISecurityEncodable ISecurityPolicyEncodable IStackWalk HostSecurityManagerOptions
+      HostSecurityManager NamedPermissionSet PermissionSet ReadOnlyPermissionSet SecureString SecurityContextSource SecurityContext
+      SecurityException SecurityState HostProtectionException PolicyLevelType SecurityManager SecurityZone VerificationException
+      InheritanceFlags PropagationFlags AuditFlags SecurityInfos ResourceType AccessControlSections AccessControlActions AceType
+      AceFlags GenericAce KnownAce CustomAce CompoundAceType CompoundAce AceQualifier QualifiedAce CommonAce ObjectAceFlags
+      ObjectAce AceEnumerator GenericAcl RawAcl CommonAcl SystemAcl DiscretionaryAcl CryptoKeyRights CryptoKeyAccessRule
+      CryptoKeyAuditRule CryptoKeySecurity EventWaitHandleRights EventWaitHandleAccessRule EventWaitHandleAuditRule EventWaitHandleSecurity
+      FileSystemRights FileSystemAccessRule FileSystemAuditRule FileSystemSecurity FileSecurity DirectorySecurity MutexRights
+      MutexAccessRule MutexAuditRule MutexSecurity NativeObjectSecurity AccessControlModification ObjectSecurity AccessRule AuditRule
+      ObjectSecurity CommonObjectSecurity DirectoryObjectSecurity PrivilegeNotHeldException RegistryRights RegistryAccessRule RegistryAuditRule
+      RegistrySecurity AccessControlType AuthorizationRule AccessRule ObjectAccessRule AuditRule ObjectAuditRule AuthorizationRuleCollection
+      ControlFlags GenericSecurityDescriptor RawSecurityDescriptor CommonSecurityDescriptor CipherMode PaddingMode KeySizes CryptographicException
+      CryptographicUnexpectedOperationException ICryptoTransform RandomNumberGenerator RNGCryptoServiceProvider Aes AsymmetricAlgorithm
+      AsymmetricKeyExchangeDeformatter AsymmetricKeyExchangeFormatter AsymmetricSignatureDeformatter AsymmetricSignatureFormatter
+      FromBase64TransformMode ToBase64Transform FromBase64Transform CryptoAPITransform CspProviderFlags CspParameters CryptoConfig
+      CryptoStreamMode CryptoStream DES DESCryptoServiceProvider DeriveBytes DSAParameters DSA DSACryptoServiceProvider DSASignatureDeformatter
+      DSASignatureFormatter HMAC HMACMD5 HMACRIPEMD160 HMACSHA1 HMACSHA256 HMACSHA384 HMACSHA512 HashAlgorithm HashAlgorithmName KeyNumber
+      CspKeyContainerInfo ICspAsymmetricAlgorithm KeyedHashAlgorithm MACTripleDES MD5 MD5CryptoServiceProvider MaskGenerationMethod
+      PasswordDeriveBytes PKCS1MaskGenerationMethod RC2 RC2CryptoServiceProvider Rfc2898DeriveBytes RIPEMD160 RIPEMD160Managed RSAParameters
+      RSA RSASignaturePadding RSASignaturePaddingMode RSACryptoServiceProvider RSAEncryptionPadding RSAEncryptionPaddingMode RSAOAEPKeyExchangeDeformatter
+      RSAOAEPKeyExchangeFormatter RSAPKCS1KeyExchangeDeformatter RSAPKCS1KeyExchangeFormatter RSAPKCS1SignatureDeformatter RSAPKCS1SignatureFormatter
+      Rijndael RijndaelManaged RijndaelManagedTransform SHA1 SHA1CryptoServiceProvider SHA1Managed SHA256 SHA256Managed SHA384 SHA384Managed SHA512
+      SHA512Managed SignatureDescription SymmetricAlgorithm TripleDES TripleDESCryptoServiceProvider X509ContentType X509KeyStorageFlags X509Certificate
+      EnvironmentPermissionAccess EnvironmentPermission FileDialogPermissionAccess FileDialogPermission FileIOPermissionAccess FileIOPermission
+      HostProtectionResource HostProtectionAttribute IsolatedStorageContainment IsolatedStoragePermission IsolatedStorageFilePermission PermissionState
+      SecurityAction SecurityAttribute CodeAccessSecurityAttribute EnvironmentPermissionAttribute FileDialogPermissionAttribute FileIOPermissionAttribute
+      KeyContainerPermissionAttribute PrincipalPermissionAttribute ReflectionPermissionAttribute RegistryPermissionAttribute SecurityPermissionAttribute
+      UIPermissionAttribute ZoneIdentityPermissionAttribute StrongNameIdentityPermissionAttribute SiteIdentityPermissionAttribute
+      UrlIdentityPermissionAttribute PublisherIdentityPermissionAttribute IsolatedStoragePermissionAttribute IsolatedStorageFilePermissionAttribute
+      PermissionSetAttribute ReflectionPermissionFlag ReflectionPermission PrincipalPermission SecurityPermissionFlag SecurityPermission
+      SiteIdentityPermission StrongNameIdentityPermission StrongNamePublicKeyBlob UIPermissionWindow UIPermissionClipboard UIPermission
+      UrlIdentityPermission ZoneIdentityPermission GacIdentityPermissionAttribute GacIdentityPermission IUnrestrictedPermission
+      KeyContainerPermissionFlags KeyContainerPermissionAccessEntry KeyContainerPermissionAccessEntryCollection KeyContainerPermissionAccessEntryEnumerator
+      KeyContainerPermission PublisherIdentityPermission RegistryPermissionAccess RegistryPermission Claim ClaimsIdentity ClaimsPrincipal
+      ClaimTypes ClaimValueTypes GenericIdentity GenericPrincipal IIdentity IPrincipal PrincipalPolicy TokenAccessLevels TokenImpersonationLevel
+      WindowsAccountType WindowsIdentity WindowsImpersonationContext WindowsBuiltInRole WindowsPrincipal IdentityReference IdentityReferenceCollection
+      NTAccount WellKnownSidType SecurityIdentifier IdentityNotMappedException AllMembershipCondition ApplicationDirectory ApplicationDirectoryMembershipCondition
+      ApplicationSecurityInfo ApplicationSecurityManager ApplicationVersionMatch ApplicationTrust ApplicationTrustCollection ApplicationTrustEnumerator
+      CodeGroup Evidence EvidenceBase FileCodeGroup FirstMatchCodeGroup IIdentityPermissionFactory IMembershipCondition IApplicationTrustManager
+      TrustManagerUIContext TrustManagerContext CodeConnectAccess NetCodeGroup PermissionRequestEvidence PolicyException PolicyLevel
+      PolicyStatementAttribute PolicyStatement Site SiteMembershipCondition StrongName StrongNameMembershipCondition UnionCodeGroup Url
+      UrlMembershipCondition Zone ZoneMembershipCondition GacInstalled GacMembershipCondition Hash HashMembershipCondition Publisher
+      PublisherMembershipCondition IResourceReader IResourceWriter MissingManifestResourceException MissingSatelliteAssemblyException
+      NeutralResourcesLanguageAttribute ResourceManager ResourceReader ResourceSet ResourceWriter SatelliteContractVersionAttribute
+      UltimateResourceFallbackLocation Calendar CalendarAlgorithmType CalendarWeekRule CharUnicodeInfo CompareOptions CompareInfo CultureInfo
+      CultureNotFoundException CultureTypes DateTimeStyles DateTimeFormatInfo DaylightTime DigitShapes GregorianCalendar GregorianCalendarTypes
+      HebrewCalendar HijriCalendar UmAlQuraCalendar ChineseLunisolarCalendar EastAsianLunisolarCalendar JapaneseLunisolarCalendar JulianCalendar
+      KoreanLunisolarCalendar PersianCalendar TaiwanLunisolarCalendar IdnMapping JapaneseCalendar KoreanCalendar RegionInfo SortKey StringInfo
+      TaiwanCalendar TextElementEnumerator TextInfo ThaiBuddhistCalendar TimeSpanStyles NumberFormatInfo NumberStyles UnicodeCategory SortVersion
+      ConditionalAttribute Debugger DebuggerStepThroughAttribute DebuggerStepperBoundaryAttribute DebuggerHiddenAttribute DebuggerNonUserCodeAttribute
+      DebuggableAttribute DebuggerBrowsableState DebuggerBrowsableAttribute DebuggerTypeProxyAttribute DebuggerDisplayAttribute DebuggerVisualizerAttribute
+      StackTrace StackFrame ISymbolBinder ISymbolBinder1 ISymbolDocument ISymbolDocumentWriter ISymbolMethod ISymbolNamespace ISymbolReader ISymbolScope
+      ISymbolVariable ISymbolWriter SymAddressKind SymDocumentType SymLanguageType SymLanguageVendor SymbolToken PureAttribute ContractClassAttribute
+      ContractClassForAttribute ContractInvariantMethodAttribute ContractReferenceAssemblyAttribute ContractRuntimeIgnoredAttribute ContractVerificationAttribute
+      ContractPublicPropertyNameAttribute ContractArgumentValidatorAttribute ContractAbbreviatorAttribute ContractOptionAttribute Contract ContractFailureKind
+      ContractFailedEventArgs ContractHelper SuppressMessageAttribute EventActivityOptions EventSource EventSourceSettings EventListener EventCommandEventArgs
+      EventWrittenEventArgs EventSourceAttribute EventAttribute NonEventAttribute EventCommand EventManifestOptions EventSourceException EventLevel EventTask
+      EventOpcode EventChannel EventKeywords EventDataAttribute EventFieldTags EventFieldAttribute EventFieldFormat EventIgnoreAttribute EventSourceOptions
+      EventTags CaseInsensitiveComparer CaseInsensitiveHashCodeProvider CollectionBase DictionaryBase ReadOnlyCollectionBase Queue ArrayList BitArray Stack
+      Comparer Hashtable DictionaryEntry ICollection IComparer IDictionary IDictionaryEnumerator IEnumerable IEnumerator IEqualityComparer IHashCodeProvider
+      IList SortedList IStructuralEquatable IStructuralComparable StructuralComparisons ConcurrentStack IProducerConsumerCollection ConcurrentDictionary
+      ConcurrentQueue Partitioner OrderablePartitioner EnumerablePartitionerOptions Partitioner Collection ReadOnlyCollection ReadOnlyDictionary KeyedCollection
+      Comparer Dictionary EqualityComparer ICollection IComparer IDictionary IEnumerable IEnumerator IEqualityComparer IList IReadOnlyCollection IReadOnlyList
+      IReadOnlyDictionary KeyNotFoundException KeyValuePair List AbandonedMutexException AsyncLocal AsyncLocalValueChangedArgs AutoResetEvent SendOrPostCallback
+      SynchronizationContext CompressedStack EventResetMode EventWaitHandle ContextCallback AsyncFlowControl ExecutionContext Interlocked HostExecutionContext
+      HostExecutionContextManager LockCookie LockRecursionException ManualResetEvent Monitor Mutex NativeOverlapped Overlapped ParameterizedThreadStart
+      ReaderWriterLock SemaphoreFullException SynchronizationLockException Thread ThreadAbortException ThreadInterruptedException RegisteredWaitHandle
+      WaitCallback WaitOrTimerCallback IOCompletionCallback ThreadPool ThreadPriority ThreadStart ThreadState ThreadStateException ThreadStartException
+      Timeout TimerCallback Timer Volatile WaitHandle WaitHandleExtensions WaitHandleCannotBeOpenedException ApartmentState SpinLock SpinWait CountdownEvent
+      LazyThreadSafetyMode LazyInitializer ThreadLocal SemaphoreSlim ManualResetEventSlim CancellationTokenRegistration CancellationTokenSource CancellationToken
+      Task TaskFactory ParallelOptions Parallel ParallelLoopState ParallelLoopResult TaskStatus Task TaskCreationOptions TaskContinuationOptions TaskCanceledException
+      TaskSchedulerException TaskFactory TaskScheduler UnobservedTaskExceptionEventArgs TaskCompletionSource ConcurrentExclusiveSchedulerPair AmbiguousMatchException
+      ModuleResolveEventHandler Assembly AssemblyCopyrightAttribute AssemblyTrademarkAttribute AssemblyProductAttribute AssemblyCompanyAttribute
+      AssemblyDescriptionAttribute AssemblyTitleAttribute AssemblyConfigurationAttribute AssemblyDefaultAliasAttribute AssemblyInformationalVersionAttribute
+      AssemblyFileVersionAttribute AssemblyCultureAttribute AssemblyVersionAttribute AssemblyKeyFileAttribute AssemblyDelaySignAttribute AssemblyAlgorithmIdAttribute
+      AssemblyFlagsAttribute AssemblyMetadataAttribute AssemblySignatureKeyAttribute AssemblyKeyNameAttribute AssemblyName AssemblyNameProxy AssemblyNameFlags
+      AssemblyContentType ProcessorArchitecture CustomAttributeExtensions CustomAttributeFormatException Binder BindingFlags CallingConventions ConstructorInfo
+      CustomAttributeData CustomAttributeNamedArgument CustomAttributeTypedArgument DefaultMemberAttribute EventAttributes EventInfo FieldAttributes FieldInfo
+      GenericParameterAttributes ICustomAttributeProvider IReflectableType IntrospectionExtensions RuntimeReflectionExtensions InterfaceMapping
+      InvalidFilterCriteriaException IReflect ManifestResourceInfo ResourceLocation MemberFilter MemberInfo MemberTypes MethodAttributes MethodBase
+      MethodImplAttributes MethodInfo Missing PortableExecutableKinds ImageFileMachine Module ObfuscateAssemblyAttribute ObfuscationAttribute
+      ExceptionHandlingClauseOptions ExceptionHandlingClause MethodBody LocalVariableInfo ParameterAttributes ParameterInfo ParameterModifier
+      Pointer PropertyAttributes PropertyInfo ReflectionContext ReflectionTypeLoadException ResourceAttributes StrongNameKeyPair TargetException
+      TargetInvocationException TargetParameterCountException TypeAttributes TypeDelegator TypeFilter TypeInfo AssemblyBuilder AssemblyBuilderAccess
+      ConstructorBuilder DynamicILInfo DynamicMethod EventBuilder EventToken FieldBuilder FieldToken ILGenerator Label LocalBuilder MethodBuilder
+      ExceptionHandler CustomAttributeBuilder MethodRental MethodToken ModuleBuilder PEFileKinds OpCodes OpCode OpCodeType StackBehaviour OperandType
+      FlowControl ParameterBuilder ParameterToken PropertyBuilder PropertyToken SignatureHelper SignatureToken StringToken PackingSize TypeBuilder
+      GenericTypeParameterBuilder EnumBuilder TypeToken UnmanagedMarshal InternalApplicationIdentityHelper InternalActivationContextHelper MemoryFailPoint
+      GCLargeObjectHeapCompactionMode GCLatencyMode GCSettings AssemblyTargetedPatchBandAttribute TargetedPatchingOptOutAttribute ProfileOptimization
+      WindowsRuntimeDesignerContext ComponentGuaranteesOptions ComponentGuaranteesAttribute ResourceConsumptionAttribute ResourceExposureAttribute
+      ResourceScope VersioningHelper TargetFrameworkAttribute CompatibilitySwitch CriticalFinalizerObject Consistency Cer ReliabilityContractAttribute
+      PrePrepareMethodAttribute FormatterConverter FormatterServices IDeserializationCallback IFormatter IFormatterConverter IObjectReference ISerializable
+      ISerializationSurrogate ISurrogateSelector OptionalFieldAttribute OnSerializingAttribute OnSerializedAttribute OnDeserializingAttribute
+      OnDeserializedAttribute SerializationBinder SerializationException SerializationInfo SerializationEntry SerializationInfoEnumerator StreamingContext
+      StreamingContextStates Formatter ObjectIDGenerator ObjectManager SafeSerializationEventArgs ISafeSerializationData SerializationObjectManager
+      SurrogateSelector FormatterTypeStyle FormatterAssemblyStyle TypeFilterLevel ISoapMessage IFieldInfo InternalRM InternalST SoapMessage SoapFault
+      ServerFault BinaryFormatter HandleProcessCorruptedStateExceptionsAttribute FirstChanceExceptionEventArgs ExceptionDispatchInfo IObjectHandle
+      WellKnownObjectMode IRemotingTypeInfo IChannelInfo IEnvoyInfo ObjRef RemotingConfiguration TypeEntry ActivatedClientTypeEntry ActivatedServiceTypeEntry
+      WellKnownClientTypeEntry WellKnownServiceTypeEntry CustomErrorsModes RemotingException ServerException RemotingTimeoutException RemotingServices
+      InternalRemotingServices SoapServices ObjectHandle SoapOption XmlFieldOrderOption SoapTypeAttribute SoapMethodAttribute SoapFieldAttribute
+      SoapParameterAttribute SoapAttribute ISoapXsd SoapDateTime SoapDuration SoapTime SoapDate SoapYearMonth SoapYear SoapMonthDay SoapDay SoapMonth
+      SoapHexBinary SoapBase64Binary SoapInteger SoapPositiveInteger SoapNonPositiveInteger SoapNonNegativeInteger SoapNegativeInteger SoapAnyUri
+      SoapQName SoapNotation SoapNormalizedString SoapToken SoapLanguage SoapName SoapIdrefs SoapEntities SoapNmtoken SoapNmtokens SoapNcName SoapId
+      SoapIdref SoapEntity ProxyAttribute RealProxy EnterpriseServicesHelper ITrackingHandler TrackingServices CrossContextDelegate Context ContextProperty
+      IContextAttribute IContextProperty IContextPropertyActivator ContextAttribute IContributeClientContextSink IContributeDynamicSink IContributeEnvoySink
+      IContributeObjectSink IContributeServerContextSink IDynamicProperty IDynamicMessageSink SynchronizationAttribute ClientSponsor ILease ISponsor
+      LeaseState LifetimeServices ChannelServices IClientChannelSinkStack IClientResponseChannelSinkStack ClientChannelSinkStack IServerChannelSinkStack
+      IServerResponseChannelSinkStack ServerChannelSinkStack IChannel IChannelSender IChannelReceiver IChannelReceiverHook IClientChannelSinkProvider
+      IServerChannelSinkProvider IClientFormatterSinkProvider IServerFormatterSinkProvider IClientChannelSink ServerProcessing IServerChannelSink
+      IChannelSinkBase IClientFormatterSink IChannelDataStore ChannelDataStore ITransportHeaders TransportHeaders SinkProviderData
+      BaseChannelSinkWithProperties BaseChannelWithProperties BaseChannelObjectWithProperties ISecurableChannel AsyncResult IMessage
+      IMessageCtrl IMessageSink IMethodMessage IMethodCallMessage IMethodReturnMessage IRemotingFormatter ReturnMessage MethodCall ConstructionCall
+      MethodResponse ConstructionResponse InternalMessageWrapper MethodCallMessageWrapper MethodReturnMessageWrapper OneWayAttribute
+      MessageSurrogateFilter RemotingSurrogateSelector Header HeaderHandler CallContext ILogicalThreadAffinative LogicalCallContext IActivator
+      ActivatorLevel IConstructionCallMessage IConstructionReturnMessage UrlAttribute StringFreezingAttribute ContractHelper AccessedThroughPropertyAttribute
+      CallConvCdecl CallConvStdcall CallConvThiscall CallConvFastcall RuntimeHelpers CompilerGeneratedAttribute CustomConstantAttribute DateTimeConstantAttribute
+      DiscardableAttribute DecimalConstantAttribute DisablePrivateReflectionAttribute CompilationRelaxations CompilationRelaxationsAttribute
+      CompilerGlobalScopeAttribute ExtensionAttribute FixedBufferAttribute IndexerNameAttribute InternalsVisibleToAttribute IsVolatile MethodImplOptions
+      MethodCodeType MethodImplAttribute FixedAddressValueTypeAttribute UnsafeValueTypeAttribute RequiredAttributeAttribute LoadHint DefaultDependencyAttribute
+      DependencyAttribute CompilerMarshalOverride HasCopySemanticsAttribute IsBoxed IsByValue IsConst IsExplicitlyDereferenced IsImplicitlyDereferenced
+      IsJitIntrinsic IsLong IsPinned IsSignUnspecifiedByte IsUdtReturn ScopelessEnumAttribute SpecialNameAttribute IsCopyConstructed SuppressIldasmAttribute
+      NativeCppClassAttribute TypeForwardedToAttribute TypeForwardedFromAttribute ReferenceAssemblyAttribute RuntimeCompatibilityAttribute
+      RuntimeWrappedException ConditionalWeakTable CallerFilePathAttribute CallerLineNumberAttribute CallerMemberNameAttribute StateMachineAttribute
+      IteratorStateMachineAttribute AsyncStateMachineAttribute AsyncVoidMethodBuilder AsyncTaskMethodBuilder AsyncTaskMethodBuilder IAsyncStateMachine
+      INotifyCompletion ICriticalNotifyCompletion TaskAwaiter TaskAwaiter ConfiguredTaskAwaitable ConfiguredTaskAwaitable YieldAwaitable FormattableStringFactory
+      IDispatchConstantAttribute IUnknownConstantAttribute _Activator _Attribute _Thread _Type _Assembly _MemberInfo _MethodBase _MethodInfo _ConstructorInfo
+      _FieldInfo _PropertyInfo _EventInfo _ParameterInfo _Module _AssemblyName ArrayWithOffset UnmanagedFunctionPointerAttribute TypeIdentifierAttribute
+      AllowReversePInvokeCallsAttribute DispIdAttribute ComInterfaceType InterfaceTypeAttribute ComDefaultInterfaceAttribute ClassInterfaceType
+      ClassInterfaceAttribute ComVisibleAttribute TypeLibImportClassAttribute LCIDConversionAttribute ComRegisterFunctionAttribute ComUnregisterFunctionAttribute
+      ProgIdAttribute ImportedFromTypeLibAttribute IDispatchImplType IDispatchImplAttribute ComSourceInterfacesAttribute ComConversionLossAttribute
+      TypeLibTypeFlags TypeLibFuncFlags TypeLibVarFlags TypeLibTypeAttribute TypeLibFuncAttribute TypeLibVarAttribute VarEnum UnmanagedType MarshalAsAttribute
+      ComImportAttribute GuidAttribute PreserveSigAttribute InAttribute OutAttribute OptionalAttribute DllImportSearchPath DefaultDllImportSearchPathsAttribute
+      DllImportAttribute StructLayoutAttribute FieldOffsetAttribute ComAliasNameAttribute AutomationProxyAttribute PrimaryInteropAssemblyAttribute
+      CoClassAttribute ComEventInterfaceAttribute TypeLibVersionAttribute ComCompatibleVersionAttribute BestFitMappingAttribute DefaultCharSetAttribute
+      SetWin32ContextInIDispatchAttribute ManagedToNativeComInteropStubAttribute CallingConvention CharSet COMException CriticalHandle ExternalException
+      GCHandleType GCHandle HandleRef ICustomMarshaler _Exception InvalidOleVariantTypeException LayoutKind CustomQueryInterfaceMode Marshal
+      MarshalDirectiveException RuntimeEnvironment SEHException SafeBuffer SafeHandle BStrWrapper CurrencyWrapper DispatchWrapper ErrorWrapper
+      UnknownWrapper VariantWrapper ComMemberType ExtensibleClassFactory ICustomAdapter ICustomFactory CustomQueryInterfaceResult ICustomQueryInterface
+      InvalidComObjectException AssemblyRegistrationFlags IRegistrationServices TypeLibImporterFlags TypeLibExporterFlags ImporterEventKind
+      ExporterEventKind ITypeLibImporterNotifySink ITypeLibExporterNotifySink ITypeLibConverter ITypeLibExporterNameProvider ObjectCreationDelegate
+      RegistrationClassContext RegistrationConnectionType RegistrationServices SafeArrayRankMismatchException SafeArrayTypeMismatchException
+      TypeLibConverter BIND_OPTS UCOMIBindCtx UCOMIConnectionPointContainer UCOMIConnectionPoint UCOMIEnumMoniker CONNECTDATA UCOMIEnumConnections
+      UCOMIEnumConnectionPoints UCOMIEnumString UCOMIEnumVARIANT FILETIME UCOMIMoniker UCOMIPersistFile UCOMIRunningObjectTable STATSTG UCOMIStream
+      DESCKIND BINDPTR UCOMITypeComp TYPEKIND TYPEFLAGS IMPLTYPEFLAGS TYPEATTR FUNCDESC IDLFLAG IDLDESC PARAMFLAG PARAMDESC TYPEDESC ELEMDESC VARDESC
+      DISPPARAMS EXCEPINFO FUNCKIND INVOKEKIND CALLCONV FUNCFLAGS VARFLAGS UCOMITypeInfo SYSKIND LIBFLAGS TYPELIBATTR UCOMITypeLib ComEventsHelper
+      _AssemblyBuilder _ConstructorBuilder _CustomAttributeBuilder _EnumBuilder _EventBuilder _FieldBuilder _ILGenerator _LocalBuilder _MethodBuilder
+      _MethodRental _ModuleBuilder _ParameterBuilder _PropertyBuilder _SignatureHelper _TypeBuilder DefaultInterfaceAttribute
+      InterfaceImplementedInVersionAttribute ReadOnlyArrayAttribute WriteOnlyArrayAttribute ReturnValueNameAttribute EventRegistrationToken
+      EventRegistrationTokenTable IActivationFactory WindowsRuntimeMarshal WindowsRuntimeMetadata NamespaceResolveEventArgs DesignerNamespaceResolveEventArgs
+      IExpando BIND_OPTS IBindCtx IConnectionPointContainer IConnectionPoint IEnumMoniker CONNECTDATA IEnumConnections IEnumConnectionPoints IEnumString
+      IEnumVARIANT FILETIME IMoniker IPersistFile IRunningObjectTable STATSTG IStream DESCKIND BINDPTR ITypeComp TYPEKIND TYPEFLAGS IMPLTYPEFLAGS TYPEATTR
+      FUNCDESC IDLFLAG IDLDESC PARAMFLAG PARAMDESC TYPEDESC ELEMDESC VARKIND VARDESC DISPPARAMS EXCEPINFO FUNCKIND INVOKEKIND CALLCONV FUNCFLAGS VARFLAGS
+      ITypeInfo SYSKIND LIBFLAGS TYPELIBATTR ITypeLib ITypeLib2 ITypeInfo2 ApplicationActivator ActivationArguments StringBuilder ASCIIEncoding Decoder
+      DecoderExceptionFallback DecoderExceptionFallbackBuffer DecoderFallbackException DecoderFallback DecoderFallbackBuffer DecoderReplacementFallback
+      DecoderReplacementFallbackBuffer Encoder EncoderExceptionFallback EncoderExceptionFallbackBuffer EncoderFallbackException EncoderFallback
+      EncoderFallbackBuffer EncoderReplacementFallback EncoderReplacementFallbackBuffer Encoding EncodingInfo EncodingProvider NormalizationForm
+      UnicodeEncoding UTF7Encoding UTF8Encoding UTF32Encoding SafeNCryptHandle SafeNCryptKeyHandle SafeNCryptProviderHandle SafeNCryptSecretHandle
+      SafePipeHandle SafeMemoryMappedFileHandle SafeMemoryMappedViewHandle LockRecursionPolicy ReaderWriterLockSlim TaskExtensions HashSet
+      HandleInheritability MemoryMappedFileAccess MemoryMappedFileOptions MemoryMappedFile MemoryMappedViewAccessor MemoryMappedViewStream
+      MemoryMappedFileRights MemoryMappedFileSecurity PipeDirection PipeTransmissionMode PipeOptions AnonymousPipeServerStream AnonymousPipeClientStream
+      PipeStreamImpersonationWorker NamedPipeServerStream NamedPipeClientStream PipeStream PipeAccessRights PipeAccessRule PipeAuditRule
+      PipeSecurity BinaryOperationBinder BindingRestrictions CallInfo ConvertBinder CreateInstanceBinder DeleteIndexBinder DeleteMemberBinder
+      DynamicMetaObject DynamicMetaObjectBinder DynamicObject ExpandoObject GetIndexBinder GetMemberBinder IDynamicMetaObjectProvider IInvokeOnGetBinder
+      InvokeBinder InvokeMemberBinder SetIndexBinder SetMemberBinder UnaryOperationBinder ManifestKinds AesCryptoServiceProvider AesManaged CngAlgorithm
+      CngAlgorithmGroup CngKeyHandleOpenOptions CngKey CngKeyBlobFormat CngKeyCreationParameters CngProperty CngPropertyCollection CngProvider
+      CngUIPolicy ECDiffieHellman ECDiffieHellmanPublicKey ECDiffieHellmanKeyDerivationFunction ECDiffieHellmanCng ECDiffieHellmanCngPublicKey ECDsa
+      ECDsaCng ECKeyXmlFormat ManifestSignatureInformation ManifestSignatureInformationCollection MD5Cng CngExportPolicies CngKeyCreationOptions
+      CngKeyOpenOptions CngKeyUsages CngPropertyOptions CngUIProtectionLevels RSACng SHA1Cng SHA256Cng SHA256CryptoServiceProvider SHA384Cng
+      SHA384CryptoServiceProvider SHA512Cng SHA512CryptoServiceProvider SignatureVerificationResult StrongNameSignatureInformation
+      AuthenticodeSignatureInformation RSACertificateExtensions ECDsaCertificateExtensions TimestampInformation TrustStatus ComAwareEventInfo
+      ExecutionScope DynamicAttribute CallSite CallSite CallSiteBinder CallSiteHelpers CallSiteOps RuntimeOps RuleCache Closure DebugInfoGenerator
+      IRuntimeVariables ReadOnlyCollectionBuilder StrongBox IStrongBox IQueryable IQueryable IQueryProvider IOrderedQueryable
+      IOrderedQueryable Queryable Enumerable IOrderedEnumerable IGrouping ILookup Lookup EnumerableQuery EnumerableQuery
+      EnumerableExecutor EnumerableExecutor ParallelEnumerable ParallelMergeOptions ParallelExecutionMode OrderedParallelQuery
+      ParallelQuery ParallelQuery BinaryExpression Expression BlockExpression CatchBlock ConditionalExpression ConstantExpression
+      DebugInfoExpression DefaultExpression DynamicExpression ElementInit ExpressionType ExpressionVisitor DynamicExpressionVisitor
+      GotoExpressionKind GotoExpression IArgumentProvider IDynamicExpression IndexExpression InvocationExpression LabelExpression LabelTarget
+      LambdaExpression Expression ListInitExpression LoopExpression MemberAssignment MemberBindingType MemberBinding MemberExpression
+      MemberInitExpression MemberListBinding MemberMemberBinding MethodCallExpression NewArrayExpression NewExpression ParameterExpression
+      RuntimeVariablesExpression SwitchCase SwitchExpression SymbolDocumentInfo TryExpression TypeBinaryExpression UnaryExpression
+      ManagementEntityAttribute ManagementHostingModel WmiConfigurationAttribute ManagementMemberAttribute ManagementNewInstanceAttribute
+      ManagementBindAttribute ManagementCreateAttribute ManagementRemoveAttribute ManagementEnumeratorAttribute ManagementProbeAttribute
+      ManagementTaskAttribute ManagementKeyAttribute ManagementReferenceAttribute ManagementConfigurationType ManagementConfigurationAttribute
+      ManagementCommitAttribute ManagementNameAttribute InstrumentationBaseException InstrumentationException InstanceNotFoundException
+      EventSchemaTraceListener TraceLogRetentionOption UnescapedXmlDiagnosticData CounterData CounterSetInstanceCounterDataSet CounterSet
+      CounterSetInstance CounterSetInstanceType CounterType EventDescriptor EventProvider EventProviderTraceListener EventBookmark EventLogType
+      EventLogIsolation EventLogMode EventLogConfiguration EventLogLink EventLogStatus EventProperty EventLogPropertySelector EventRecord
+      EventKeyword EventLevel EventLogRecord EventLogReader EventLogWatcher EventRecordWrittenEventArgs EventLogQuery SessionAuthentication
+      PathType EventLogSession EventMetadata EventOpcode EventTask EventLogException EventLogNotFoundException EventLogReadingException
+      EventLogProviderDisabledException EventLogInvalidDataException EventLogInformation ProviderMetadata StandardEventLevel StandardEventTask
+      StandardEventOpcode StandardEventKeywords
+    </Words>
+    <IgnoreCase>false</IgnoreCase>
+    <Foreground>#2D90AD</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightWordsRule>
+
+  <HighlightWordsRule name="Standard types">
+    <Words>
+      bool byte sbyte char decimal double float int uint long ulong object short ushort string
+    </Words>
+    <IgnoreCase>false</IgnoreCase>
+    <Foreground>#9696FC</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightWordsRule>
+
+  <HighlightWordsRule name="Standard functions">
+    <Words>
+      IDLING TURNING_LEFT TURNING_RIGHT TURNING_AROUND MOVING_FORWARD RANGED_ATTACK MELEE_ATTACK SELF_DESTRUCTING
+      NORTH EAST SOUTH WEST
+      Width Height Location Location X Y
+      MaximumPhysicalHealth PhysicalHealth PhysicalHealthDrain
+      MaximumMentalHealth MentalHealth MentalHealthDrain
+      MaximumStamina Stamina StaminaDrain
+      Orientation LastAction CurrentAction Vision Bots
+      FriendlyBots EnemyBots PredatorBots Name
+      MoveForward TurnLeft TurnRight TurnAround MeleeAttack RangedAttack SelfDestruct
+      StoreInMemory LoadFromMemory RemoveFromMemory
+    </Words>
+    <IgnoreCase>false</IgnoreCase>
+    <Foreground>#007F0E</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightWordsRule>
+
+  <HighlightLineRule name="Comments">
+    <LineStart>//</LineStart>
+    <IgnoreCase>true</IgnoreCase>
+    <Foreground>#017F03</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </HighlightLineRule>
+
+  <AdvancedHighlightRule name="Numbers">
+    <Expression>\b([0-9]+)\b</Expression>
+    <IgnoreCase>true</IgnoreCase>
+    <Foreground>#F68A1B</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </AdvancedHighlightRule>
+
+  <AdvancedHighlightRule name="Numbers">
+    <Expression>(["'])(?:(?=(\\?))\2.)*?\1</Expression>
+    <IgnoreCase>true</IgnoreCase>
+    <Foreground>#A31515</Foreground>
+    <FontWeight>Normal</FontWeight>
+    <FontStyle>Normal</FontStyle>
+  </AdvancedHighlightRule>
+</Syntax>

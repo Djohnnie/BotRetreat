@@ -1,0 +1,95 @@
+﻿<UserControl x:Class="BotRetreat.Management.Wpf.Views.TeamsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:design="clr-namespace:BotRetreat.Management.Wpf.ViewModels.Design"
+             xmlns:converters="clr-namespace:BotRetreat.Framework.Wpf.Converters;assembly=BotRetreat.Framework.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="480" d:DesignWidth="640">
+    <d:UserControl.DataContext>
+        <design:DesignTeamsViewModel />
+    </d:UserControl.DataContext>
+    <UserControl.Resources>
+        <converters:TimeSpanToStringConverter x:Key="TimeSpanToStringConverter" />
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="0" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="5" VerticalAlignment="Center" Text="Name" />
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Padding="2" Text="{Binding SelectedTeam.Name}" />
+            <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Add team" Padding="5" Margin="5" Command="{Binding CreateTeamCommand}" />
+                <Button Content="Edit selected team" Padding="5" Margin="5" Command="{Binding EditTeamCommand}" />
+                <Button Content="Remove selected team" Padding="5" Margin="5" Command="{Binding RemoveTeamCommand}" />
+            </StackPanel>
+        </Grid>
+        <ListBox Grid.Column="0" Grid.Row="1" Margin="5" ItemsSource="{Binding Teams}" SelectedItem="{Binding SelectedTeam}" SelectionMode="Single" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Background="LightGray" />
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Team: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding TeamName}" Margin="3" FontSize="16" />
+                        <TextBlock Grid.Row="0" Grid.Column="2" Text="Arena: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="0" Grid.Column="3" Text="{Binding ArenaName}" Margin="3" FontSize="16" />
+
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Number of live bots: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding NumberOfLiveBots}" Margin="3" FontSize="16" />
+                        <TextBlock Grid.Row="1" Grid.Column="2" Text="Number of dead bots: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="1" Grid.Column="3" Text="{Binding NumberOfDeadBots}" Margin="3" FontSize="16" />
+                        <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" BorderThickness="0,0,0,1" BorderBrush="LightGray" />
+
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Total number of kills: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding TotalNumberOfKills}" Margin="3" FontSize="16" />
+                        <TextBlock Grid.Row="2" Grid.Column="2" Text="Total number of deaths: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="2" Grid.Column="3" Text="{Binding TotalNumberOfDeaths}" Margin="3" FontSize="16" />
+                        <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" BorderThickness="0,0,0,1" BorderBrush="LightGray" />
+
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Physical damage done: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding TotalPhysicalDamageDone}" Margin="3" FontSize="16" />
+                        <TextBlock Grid.Row="3" Grid.Column="2" Text="Stamina consumed: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="3" Grid.Column="3" Text="{Binding TotalStaminaConsumed}" Margin="3" FontSize="16" />
+                        <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" BorderThickness="0,0,0,1" BorderBrush="LightGray" />
+
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Average bot life: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding AverageBotLife, Converter={StaticResource TimeSpanToStringConverter}}" Margin="3" FontSize="16" />
+                        <TextBlock Grid.Row="4" Grid.Column="2" Text="Number of deployments: " Margin="3" FontWeight="Bold" VerticalAlignment="Center" />
+                        <TextBlock Grid.Row="4" Grid.Column="3" Text="{Binding NumberOfDeployments}" Margin="3" FontSize="16" />
+                        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" BorderThickness="0,0,0,1" BorderBrush="LightGray" />
+
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BotRetreat.Web.ScriptValidation" version="2.8.6485.4" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Startup>
+    <Task commandLine="install.cmd" executionContext="elevated" relativePath="approot\bin">
+      <Environment>
+        <Variable name="PathToNETFXInstall">
+          <RoleInstanceValue xpath="/RoleEnvironment/CurrentInstance/LocalResources/LocalResource[@name='NETFXInstall']/@path" />
+        </Variable>
+      </Environment>
+    </Task>
+  </Startup>
+  <Runtime>
+    <EntryPoint>
+      <NetFxEntryPoint assemblyName="BotRetreat.Web.ScriptValidation.dll" targetFrameworkVersion="v4.0" />
+    </EntryPoint>
+  </Runtime>
+  <Properties>
+    <Property name="TargetFrameworkVersion" value="v4.5.1" />
+    <Property name="RoleType" value="Web" />
+    <Property name="RoleName" value="BotRetreat.Web.ScriptValidation" />
+    <Property name="ProjectName" value="BotRetreat.Web.ScriptValidation" />
+    <Property name="Configuration" value="Release" />
+    <Property name="Platform" value="AnyCPU" />
+    <Property name="SetConfiguration" value="Configuration=Release" />
+    <Property name="SetPlatform" value="Platform=AnyCPU" />
+    <Property name="RoleTargetFramework" value="v4.5.1" />
+    <Property name="OutputDir" value="C:\TFS\BotRetreat\BotRetreat\obj\Release\BotRetreat.Web.ScriptValidation\" />
+    <Property name="EntryPoint" value="BotRetreat.Web.ScriptValidation.dll" />
+    <Property name="SourceDir" value="C:\TFS\BotRetreat\BotRetreat.Web.ScriptValidation\" />
+    <Property name="SitePhysicalPath" value="C:\TFS\BotRetreat\BotRetreat\obj\Release\BotRetreat.Web.ScriptValidation\" />
+    <Property name="TargetRuntimeVersion" value="v4.0" />
+  </Properties>
+  <Sites>
+    <Site name="Web" physicalDirectory="C:\TFS\BotRetreat\BotRetreat\obj\Release\BotRetreat.Web.ScriptValidation\">
+      <Bindings>
+        <Binding name="Endpoint1" endpointName="Endpoint1" />
+      </Bindings>
+    </Site>
+  </Sites>
+</RoleModel>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="BotRetreat.Management.Wpf.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BotRetreat.Management.Wpf.Views"
+        xmlns:design="clr-namespace:BotRetreat.Management.Wpf.ViewModels.Design"
+        xmlns:components="clr-namespace:BotRetreat.Framework.Wpf.Components;assembly=BotRetreat.Framework.Wpf"
+        xmlns:converters="clr-namespace:BotRetreat.Framework.Wpf.Converters;assembly=BotRetreat.Framework.Wpf"
+        mc:Ignorable="d" Background="DarkGray"
+        DataContext="{Binding Path=MainViewModel, Source={StaticResource ViewModelLocator}}"
+        Title="BotRetreat Management" Height="480" Width="640" Icon="/BotRetreat.Management.Wpf;component/BotRetreatIcon.ico">
+    <d:Window.DataContext>
+        <design:DesignMainViewModel />
+    </d:Window.DataContext>
+    <Window.Resources>
+        <converters:TrueToVisibilityConverter x:Key="TrueToVisibilityConverter" />
+    </Window.Resources>
+    <Grid>
+        <TabControl Margin="3">
+            <TabItem Header="Teams" Padding="20,3,20,3">
+                <local:TeamsView Margin="5" DataContext="{Binding Path=TeamsViewModel, Source={StaticResource ViewModelLocator}}" />
+            </TabItem>
+            <TabItem Header="Arenas" Padding="20,3,20,3">
+                <local:ArenasView Margin="5" DataContext="{Binding Path=ArenasViewModel, Source={StaticResource ViewModelLocator}}" />
+            </TabItem>
+            <TabItem Header="Bots" Padding="20,3,20,3">
+                <local:BotsView Margin="5" DataContext="{Binding Path=BotsViewModel, Source={StaticResource ViewModelLocator}}" />
+            </TabItem>
+        </TabControl>
+        <Grid Background="#CCFFFFFF" Visibility="{Binding IsBusy, Converter={StaticResource TrueToVisibilityConverter}}">
+            <components:BusyIndicator Width="100" />
+        </Grid>
+    </Grid>
+</Window>

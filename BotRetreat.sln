@@ -1,0 +1,403 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "BotRetreat", "BotRetreat\BotRetreat.ccproj", "{55BD8914-D8F4-418A-8E3F-319907FB38E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Web", "BotRetreat.Web\BotRetreat.Web.csproj", "{80D8E22D-31CA-48E4-8311-113617ED35F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5674BF33-2A34-4CD2-ADF9-371BE28B515B} = {5674BF33-2A34-4CD2-ADF9-371BE28B515B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Worker", "BotRetreat.Worker\BotRetreat.Worker.csproj", "{FE4754F4-3F8B-4D35-AFAB-14EE8B7A759E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Domain", "BotRetreat.Domain\BotRetreat.Domain.csproj", "{F3AA770E-C522-4D22-BE18-393022067698}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Console", "BotRetreat.Console\BotRetreat.Console.csproj", "{F19F732E-E7DD-41E9-88F4-DD4A45D4483E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8. Resources", "8. Resources", "{11D0F034-EF90-4341-8116-29A9DDD36185}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{5777F11E-2163-47C2-B4B4-372E97777F2C}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Images\bot_retreat.png = Resources\Images\bot_retreat.png
+		Resources\Images\cooltext159609530617032.png = Resources\Images\cooltext159609530617032.png
+		Resources\Images\robot.bmp = Resources\Images\robot.bmp
+		Resources\Images\robot.png = Resources\Images\robot.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Avatars", "Avatars", "{F233DCDA-EDB0-4679-9E8D-C3C56FF540B8}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Images\Avatars\BigEyes_Creature _128x128.png = Resources\Images\Avatars\BigEyes_Creature _128x128.png
+		Resources\Images\Avatars\black_creature_128x128.png = Resources\Images\Avatars\black_creature_128x128.png
+		Resources\Images\Avatars\BlackCreature_128x128.png = Resources\Images\Avatars\BlackCreature_128x128.png
+		Resources\Images\Avatars\BlackPower_creature_128x128.png = Resources\Images\Avatars\BlackPower_creature_128x128.png
+		Resources\Images\Avatars\blue_creature.png = Resources\Images\Avatars\blue_creature.png
+		Resources\Images\Avatars\blue_creature_128x128.png = Resources\Images\Avatars\blue_creature_128x128.png
+		Resources\Images\Avatars\brown_creature_128x128.png = Resources\Images\Avatars\brown_creature_128x128.png
+		Resources\Images\Avatars\CheeksCreature_128x128.png = Resources\Images\Avatars\CheeksCreature_128x128.png
+		Resources\Images\Avatars\creature_black.png = Resources\Images\Avatars\creature_black.png
+		Resources\Images\Avatars\creature_blue.png = Resources\Images\Avatars\creature_blue.png
+		Resources\Images\Avatars\creature_boy.png = Resources\Images\Avatars\creature_boy.png
+		Resources\Images\Avatars\creature_girl.png = Resources\Images\Avatars\creature_girl.png
+		Resources\Images\Avatars\creature_gray.png = Resources\Images\Avatars\creature_gray.png
+		Resources\Images\Avatars\creature_green.png = Resources\Images\Avatars\creature_green.png
+		Resources\Images\Avatars\creature_mom.png = Resources\Images\Avatars\creature_mom.png
+		Resources\Images\Avatars\creature_orange.png = Resources\Images\Avatars\creature_orange.png
+		Resources\Images\Avatars\creature_pink.png = Resources\Images\Avatars\creature_pink.png
+		Resources\Images\Avatars\creature_red.png = Resources\Images\Avatars\creature_red.png
+		Resources\Images\Avatars\DomokunCreature_128x128.png = Resources\Images\Avatars\DomokunCreature_128x128.png
+		Resources\Images\Avatars\dragon_creature.png = Resources\Images\Avatars\dragon_creature.png
+		Resources\Images\Avatars\dreadhair_beige128.png = Resources\Images\Avatars\dreadhair_beige128.png
+		Resources\Images\Avatars\dreadhair_black128.png = Resources\Images\Avatars\dreadhair_black128.png
+		Resources\Images\Avatars\dreadhair_blue128.png = Resources\Images\Avatars\dreadhair_blue128.png
+		Resources\Images\Avatars\dreadhair_brown128.png = Resources\Images\Avatars\dreadhair_brown128.png
+		Resources\Images\Avatars\dreadhair_green128.png = Resources\Images\Avatars\dreadhair_green128.png
+		Resources\Images\Avatars\dreadhair_pink128.png = Resources\Images\Avatars\dreadhair_pink128.png
+		Resources\Images\Avatars\dreadhair_purple128.png = Resources\Images\Avatars\dreadhair_purple128.png
+		Resources\Images\Avatars\dreadhair_red128.png = Resources\Images\Avatars\dreadhair_red128.png
+		Resources\Images\Avatars\dreadhair_white128.png = Resources\Images\Avatars\dreadhair_white128.png
+		Resources\Images\Avatars\dreadhair_yellow128.png = Resources\Images\Avatars\dreadhair_yellow128.png
+		Resources\Images\Avatars\EarsCreature_128x128.png = Resources\Images\Avatars\EarsCreature_128x128.png
+		Resources\Images\Avatars\fire_creature.png = Resources\Images\Avatars\fire_creature.png
+		Resources\Images\Avatars\GlassesCreature_128x128.png = Resources\Images\Avatars\GlassesCreature_128x128.png
+		Resources\Images\Avatars\green_creature_128x128.png = Resources\Images\Avatars\green_creature_128x128.png
+		Resources\Images\Avatars\green_red_eyes.png = Resources\Images\Avatars\green_red_eyes.png
+		Resources\Images\Avatars\lady_yellow_creature.png = Resources\Images\Avatars\lady_yellow_creature.png
+		Resources\Images\Avatars\NoseCreature_128x128.png = Resources\Images\Avatars\NoseCreature_128x128.png
+		Resources\Images\Avatars\orange_creature_128x128.png = Resources\Images\Avatars\orange_creature_128x128.png
+		Resources\Images\Avatars\pink_creature_128x128.png = Resources\Images\Avatars\pink_creature_128x128.png
+		Resources\Images\Avatars\PirateCreature_128x128.png = Resources\Images\Avatars\PirateCreature_128x128.png
+		Resources\Images\Avatars\red_creature _128x128.png = Resources\Images\Avatars\red_creature _128x128.png
+		Resources\Images\Avatars\red_creature.png = Resources\Images\Avatars\red_creature.png
+		Resources\Images\Avatars\red_eyes_creature.png = Resources\Images\Avatars\red_eyes_creature.png
+		Resources\Images\Avatars\ScarCreature_128x128.png = Resources\Images\Avatars\ScarCreature_128x128.png
+		Resources\Images\Avatars\SmileCreature_128x128.png = Resources\Images\Avatars\SmileCreature_128x128.png
+		Resources\Images\Avatars\swamp_creature.png = Resources\Images\Avatars\swamp_creature.png
+		Resources\Images\Avatars\Tentacles_creature_128x128.png = Resources\Images\Avatars\Tentacles_creature_128x128.png
+		Resources\Images\Avatars\tie_creature_128x128.png = Resources\Images\Avatars\tie_creature_128x128.png
+		Resources\Images\Avatars\white_creature_128x128.png = Resources\Images\Avatars\white_creature_128x128.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.DataAccess", "BotRetreat.DataAccess\BotRetreat.DataAccess.csproj", "{D8042103-5025-437E-A043-232B3391A9EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B} = {90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Business", "BotRetreat.Business\BotRetreat.Business.csproj", "{3E2C990E-FF52-4E2C-B42D-64BAC3D912C1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D8042103-5025-437E-A043-232B3391A9EE} = {D8042103-5025-437E-A043-232B3391A9EE}
+		{C1C8F30A-2359-4C27-855E-9171DF903585} = {C1C8F30A-2359-4C27-855E-9171DF903585}
+		{F3AA770E-C522-4D22-BE18-393022067698} = {F3AA770E-C522-4D22-BE18-393022067698}
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B} = {90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}
+		{E03C74F3-E84A-4127-BC2E-EB27DA79C61B} = {E03C74F3-E84A-4127-BC2E-EB27DA79C61B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.DataTransferObjects", "BotRetreat.DataTransferObjects\BotRetreat.DataTransferObjects.csproj", "{C1C8F30A-2359-4C27-855E-9171DF903585}"
+	ProjectSection(ProjectDependencies) = postProject
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B} = {90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Mappers", "BotRetreat.Mappers\BotRetreat.Mappers.csproj", "{E03C74F3-E84A-4127-BC2E-EB27DA79C61B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B} = {90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Enums", "BotRetreat.Enums\BotRetreat.Enums.csproj", "{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Web", "3. Web", "{AE3EB98A-8C43-4D7A-83A8-BE9D6BA15E4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Worker", "4. Worker", "{5A654994-15AF-47F8-95C0-8B6B3F46E208}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Cloud Service", "0. Cloud Service", "{E62D5911-7B57-44A5-A387-DFBC21A72CAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Model", "5. Model", "{D9F92D1E-B692-442F-A329-BDB75379B516}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Logic", "6. Logic", "{9281DA63-E72A-4B62-8C35-3D774A52BA37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7. Testing", "7. Testing", "{25260359-6693-4A83-98D9-1EA526B84770}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. UI", "1. UI", "{1D37FD37-F948-4BE3-9CEC-69F08B6AF4F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Textures", "Textures", "{C6CCD66A-D7EE-4A47-B7D3-7C518FC622F1}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Images\Textures\lava.png = Resources\Images\Textures\lava.png
+		Resources\Images\Textures\rock.png = Resources\Images\Textures\rock.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Business.UnitTest", "BotRetreat.Business.UnitTest\BotRetreat.Business.UnitTest.csproj", "{E525AFE9-0675-4EC5-896F-2C6006DB8B63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Arena.Wpf", "BotRetreat.Arena.Wpf\BotRetreat.Arena.Wpf.csproj", "{FDF8E409-4410-467F-BE49-46CE3CEFFB8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Dashboard.Wpf", "BotRetreat.Dashboard.Wpf\BotRetreat.Dashboard.Wpf.csproj", "{ED3CE27B-AFCB-4A8E-B6EA-FB5F74469199}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.ScriptEditor.Wpf", "BotRetreat.ScriptEditor.Wpf\BotRetreat.ScriptEditor.Wpf.csproj", "{5B33904B-0154-412D-9A1E-AF2E26D7F364}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Management.Wpf", "BotRetreat.Management.Wpf\BotRetreat.Management.Wpf.csproj", "{74D52CB9-F235-4818-8F3A-7115D8F6D500}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Icons", "Icons", "{526A2287-9EFD-42D2-A52E-8D438BB1081A}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Images\Icons\BotRetreatIcon.ico = Resources\Images\Icons\BotRetreatIcon.ico
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Framework.Wpf", "BotRetreat.Framework.Wpf\BotRetreat.Framework.Wpf.csproj", "{4143BDA9-42B2-4881-893D-9A59774D2AE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Client", "2. Client", "{E770A991-8084-4E69-B8D9-AB5E1837CE78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Client", "BotRetreat.Client\BotRetreat.Client.csproj", "{706B3589-F848-4906-8AAC-01591654883C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Routes", "BotRetreat.Routes\BotRetreat.Routes.csproj", "{F9BD7DEA-6A43-4A3C-AA77-DC78A7321DE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Utilities", "BotRetreat.Utilities\BotRetreat.Utilities.csproj", "{0C8919EC-D155-42D3-BBA1-C130C49D3C51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Client.Design", "BotRetreat.Client.Design\BotRetreat.Client.Design.csproj", "{6B82D756-3552-477D-B91D-328C4D76A6DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Web.ScriptValidation", "BotRetreat.Web.ScriptValidation\BotRetreat.Web.ScriptValidation.csproj", "{59C25D17-0964-419E-AEE7-A818BB8836E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5674BF33-2A34-4CD2-ADF9-371BE28B515B} = {5674BF33-2A34-4CD2-ADF9-371BE28B515B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Web.Common", "BotRetreat.Web.Common\BotRetreat.Web.Common.csproj", "{5674BF33-2A34-4CD2-ADF9-371BE28B515B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Buttons", "Buttons", "{B810E7D7-DCFD-4B91-B44A-4166A73C4333}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\Images\Buttons\cs_script.png = Resources\Images\Buttons\cs_script.png
+		Resources\Images\Buttons\deploy.png = Resources\Images\Buttons\deploy.png
+		Resources\Images\Buttons\validate.png = Resources\Images\Buttons\validate.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9. Setups", "9. Setups", "{B811D6B5-3CAB-4830-AD93-9997112B0709}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BotRetreat.Setup", "BotRetreat.Setup\BotRetreat.Setup.csproj", "{16A8AA25-9A9B-4B8F-9E69-75E9AC16CF61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55BD8914-D8F4-418A-8E3F-319907FB38E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55BD8914-D8F4-418A-8E3F-319907FB38E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55BD8914-D8F4-418A-8E3F-319907FB38E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55BD8914-D8F4-418A-8E3F-319907FB38E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D8E22D-31CA-48E4-8311-113617ED35F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D8E22D-31CA-48E4-8311-113617ED35F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D8E22D-31CA-48E4-8311-113617ED35F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D8E22D-31CA-48E4-8311-113617ED35F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4754F4-3F8B-4D35-AFAB-14EE8B7A759E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4754F4-3F8B-4D35-AFAB-14EE8B7A759E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4754F4-3F8B-4D35-AFAB-14EE8B7A759E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4754F4-3F8B-4D35-AFAB-14EE8B7A759E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3AA770E-C522-4D22-BE18-393022067698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3AA770E-C522-4D22-BE18-393022067698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3AA770E-C522-4D22-BE18-393022067698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3AA770E-C522-4D22-BE18-393022067698}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F19F732E-E7DD-41E9-88F4-DD4A45D4483E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F19F732E-E7DD-41E9-88F4-DD4A45D4483E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F19F732E-E7DD-41E9-88F4-DD4A45D4483E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F19F732E-E7DD-41E9-88F4-DD4A45D4483E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8042103-5025-437E-A043-232B3391A9EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8042103-5025-437E-A043-232B3391A9EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8042103-5025-437E-A043-232B3391A9EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8042103-5025-437E-A043-232B3391A9EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E2C990E-FF52-4E2C-B42D-64BAC3D912C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E2C990E-FF52-4E2C-B42D-64BAC3D912C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E2C990E-FF52-4E2C-B42D-64BAC3D912C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E2C990E-FF52-4E2C-B42D-64BAC3D912C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1C8F30A-2359-4C27-855E-9171DF903585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1C8F30A-2359-4C27-855E-9171DF903585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1C8F30A-2359-4C27-855E-9171DF903585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1C8F30A-2359-4C27-855E-9171DF903585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03C74F3-E84A-4127-BC2E-EB27DA79C61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03C74F3-E84A-4127-BC2E-EB27DA79C61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03C74F3-E84A-4127-BC2E-EB27DA79C61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03C74F3-E84A-4127-BC2E-EB27DA79C61B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E525AFE9-0675-4EC5-896F-2C6006DB8B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E525AFE9-0675-4EC5-896F-2C6006DB8B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E525AFE9-0675-4EC5-896F-2C6006DB8B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E525AFE9-0675-4EC5-896F-2C6006DB8B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF8E409-4410-467F-BE49-46CE3CEFFB8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF8E409-4410-467F-BE49-46CE3CEFFB8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF8E409-4410-467F-BE49-46CE3CEFFB8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF8E409-4410-467F-BE49-46CE3CEFFB8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED3CE27B-AFCB-4A8E-B6EA-FB5F74469199}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED3CE27B-AFCB-4A8E-B6EA-FB5F74469199}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED3CE27B-AFCB-4A8E-B6EA-FB5F74469199}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED3CE27B-AFCB-4A8E-B6EA-FB5F74469199}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B33904B-0154-412D-9A1E-AF2E26D7F364}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B33904B-0154-412D-9A1E-AF2E26D7F364}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B33904B-0154-412D-9A1E-AF2E26D7F364}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B33904B-0154-412D-9A1E-AF2E26D7F364}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D52CB9-F235-4818-8F3A-7115D8F6D500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D52CB9-F235-4818-8F3A-7115D8F6D500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D52CB9-F235-4818-8F3A-7115D8F6D500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D52CB9-F235-4818-8F3A-7115D8F6D500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4143BDA9-42B2-4881-893D-9A59774D2AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4143BDA9-42B2-4881-893D-9A59774D2AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4143BDA9-42B2-4881-893D-9A59774D2AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4143BDA9-42B2-4881-893D-9A59774D2AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{706B3589-F848-4906-8AAC-01591654883C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{706B3589-F848-4906-8AAC-01591654883C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{706B3589-F848-4906-8AAC-01591654883C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{706B3589-F848-4906-8AAC-01591654883C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9BD7DEA-6A43-4A3C-AA77-DC78A7321DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9BD7DEA-6A43-4A3C-AA77-DC78A7321DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9BD7DEA-6A43-4A3C-AA77-DC78A7321DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9BD7DEA-6A43-4A3C-AA77-DC78A7321DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8919EC-D155-42D3-BBA1-C130C49D3C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8919EC-D155-42D3-BBA1-C130C49D3C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8919EC-D155-42D3-BBA1-C130C49D3C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8919EC-D155-42D3-BBA1-C130C49D3C51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B82D756-3552-477D-B91D-328C4D76A6DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B82D756-3552-477D-B91D-328C4D76A6DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B82D756-3552-477D-B91D-328C4D76A6DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B82D756-3552-477D-B91D-328C4D76A6DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C25D17-0964-419E-AEE7-A818BB8836E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C25D17-0964-419E-AEE7-A818BB8836E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C25D17-0964-419E-AEE7-A818BB8836E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C25D17-0964-419E-AEE7-A818BB8836E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5674BF33-2A34-4CD2-ADF9-371BE28B515B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5674BF33-2A34-4CD2-ADF9-371BE28B515B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5674BF33-2A34-4CD2-ADF9-371BE28B515B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5674BF33-2A34-4CD2-ADF9-371BE28B515B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A8AA25-9A9B-4B8F-9E69-75E9AC16CF61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A8AA25-9A9B-4B8F-9E69-75E9AC16CF61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A8AA25-9A9B-4B8F-9E69-75E9AC16CF61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A8AA25-9A9B-4B8F-9E69-75E9AC16CF61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{55BD8914-D8F4-418A-8E3F-319907FB38E0} = {E62D5911-7B57-44A5-A387-DFBC21A72CAD}
+		{80D8E22D-31CA-48E4-8311-113617ED35F9} = {AE3EB98A-8C43-4D7A-83A8-BE9D6BA15E4D}
+		{FE4754F4-3F8B-4D35-AFAB-14EE8B7A759E} = {5A654994-15AF-47F8-95C0-8B6B3F46E208}
+		{F3AA770E-C522-4D22-BE18-393022067698} = {D9F92D1E-B692-442F-A329-BDB75379B516}
+		{F19F732E-E7DD-41E9-88F4-DD4A45D4483E} = {25260359-6693-4A83-98D9-1EA526B84770}
+		{5777F11E-2163-47C2-B4B4-372E97777F2C} = {11D0F034-EF90-4341-8116-29A9DDD36185}
+		{F233DCDA-EDB0-4679-9E8D-C3C56FF540B8} = {5777F11E-2163-47C2-B4B4-372E97777F2C}
+		{D8042103-5025-437E-A043-232B3391A9EE} = {9281DA63-E72A-4B62-8C35-3D774A52BA37}
+		{3E2C990E-FF52-4E2C-B42D-64BAC3D912C1} = {9281DA63-E72A-4B62-8C35-3D774A52BA37}
+		{C1C8F30A-2359-4C27-855E-9171DF903585} = {D9F92D1E-B692-442F-A329-BDB75379B516}
+		{E03C74F3-E84A-4127-BC2E-EB27DA79C61B} = {9281DA63-E72A-4B62-8C35-3D774A52BA37}
+		{90B6436C-D5E0-41A9-9BA7-68E99A4DA67B} = {D9F92D1E-B692-442F-A329-BDB75379B516}
+		{C6CCD66A-D7EE-4A47-B7D3-7C518FC622F1} = {5777F11E-2163-47C2-B4B4-372E97777F2C}
+		{E525AFE9-0675-4EC5-896F-2C6006DB8B63} = {25260359-6693-4A83-98D9-1EA526B84770}
+		{FDF8E409-4410-467F-BE49-46CE3CEFFB8B} = {1D37FD37-F948-4BE3-9CEC-69F08B6AF4F2}
+		{ED3CE27B-AFCB-4A8E-B6EA-FB5F74469199} = {1D37FD37-F948-4BE3-9CEC-69F08B6AF4F2}
+		{5B33904B-0154-412D-9A1E-AF2E26D7F364} = {1D37FD37-F948-4BE3-9CEC-69F08B6AF4F2}
+		{74D52CB9-F235-4818-8F3A-7115D8F6D500} = {1D37FD37-F948-4BE3-9CEC-69F08B6AF4F2}
+		{526A2287-9EFD-42D2-A52E-8D438BB1081A} = {5777F11E-2163-47C2-B4B4-372E97777F2C}
+		{4143BDA9-42B2-4881-893D-9A59774D2AE7} = {1D37FD37-F948-4BE3-9CEC-69F08B6AF4F2}
+		{706B3589-F848-4906-8AAC-01591654883C} = {E770A991-8084-4E69-B8D9-AB5E1837CE78}
+		{F9BD7DEA-6A43-4A3C-AA77-DC78A7321DE2} = {D9F92D1E-B692-442F-A329-BDB75379B516}
+		{0C8919EC-D155-42D3-BBA1-C130C49D3C51} = {9281DA63-E72A-4B62-8C35-3D774A52BA37}
+		{6B82D756-3552-477D-B91D-328C4D76A6DD} = {E770A991-8084-4E69-B8D9-AB5E1837CE78}
+		{59C25D17-0964-419E-AEE7-A818BB8836E4} = {AE3EB98A-8C43-4D7A-83A8-BE9D6BA15E4D}
+		{5674BF33-2A34-4CD2-ADF9-371BE28B515B} = {AE3EB98A-8C43-4D7A-83A8-BE9D6BA15E4D}
+		{B810E7D7-DCFD-4B91-B44A-4166A73C4333} = {5777F11E-2163-47C2-B4B4-372E97777F2C}
+		{16A8AA25-9A9B-4B8F-9E69-75E9AC16CF61} = {B811D6B5-3CAB-4830-AD93-9997112B0709}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 24
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://djohnnie.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BotRetreat.Web\\BotRetreat.Web.csproj
+		SccProjectTopLevelParentUniqueName1 = BotRetreat.sln
+		SccProjectName1 = BotRetreat.Web
+		SccLocalPath1 = BotRetreat.Web
+		SccProjectUniqueName2 = BotRetreat\\BotRetreat.ccproj
+		SccProjectTopLevelParentUniqueName2 = BotRetreat.sln
+		SccProjectName2 = BotRetreat
+		SccLocalPath2 = BotRetreat
+		SccProjectUniqueName3 = BotRetreat.Worker\\BotRetreat.Worker.csproj
+		SccProjectTopLevelParentUniqueName3 = BotRetreat.sln
+		SccProjectName3 = BotRetreat.Worker
+		SccLocalPath3 = BotRetreat.Worker
+		SccProjectUniqueName4 = BotRetreat.Domain\\BotRetreat.Domain.csproj
+		SccProjectTopLevelParentUniqueName4 = BotRetreat.sln
+		SccProjectName4 = BotRetreat.Domain
+		SccLocalPath4 = BotRetreat.Domain
+		SccProjectUniqueName5 = BotRetreat.Console\\BotRetreat.Console.csproj
+		SccProjectTopLevelParentUniqueName5 = BotRetreat.sln
+		SccProjectName5 = BotRetreat.Console
+		SccLocalPath5 = BotRetreat.Console
+		SccProjectUniqueName6 = BotRetreat.DataAccess\\BotRetreat.DataAccess.csproj
+		SccProjectTopLevelParentUniqueName6 = BotRetreat.sln
+		SccProjectName6 = BotRetreat.DataAccess
+		SccLocalPath6 = BotRetreat.DataAccess
+		SccProjectUniqueName7 = BotRetreat.Business\\BotRetreat.Business.csproj
+		SccProjectTopLevelParentUniqueName7 = BotRetreat.sln
+		SccProjectName7 = BotRetreat.Business
+		SccLocalPath7 = BotRetreat.Business
+		SccProjectUniqueName8 = BotRetreat.DataTransferObjects\\BotRetreat.DataTransferObjects.csproj
+		SccProjectTopLevelParentUniqueName8 = BotRetreat.sln
+		SccProjectName8 = BotRetreat.DataTransferObjects
+		SccLocalPath8 = BotRetreat.DataTransferObjects
+		SccProjectUniqueName9 = BotRetreat.Mappers\\BotRetreat.Mappers.csproj
+		SccProjectTopLevelParentUniqueName9 = BotRetreat.sln
+		SccProjectName9 = BotRetreat.Mappers
+		SccLocalPath9 = BotRetreat.Mappers
+		SccProjectUniqueName10 = BotRetreat.Enums\\BotRetreat.Enums.csproj
+		SccProjectTopLevelParentUniqueName10 = BotRetreat.sln
+		SccProjectName10 = BotRetreat.Enums
+		SccLocalPath10 = BotRetreat.Enums
+		SccProjectUniqueName11 = BotRetreat.Business.UnitTest\\BotRetreat.Business.UnitTest.csproj
+		SccProjectTopLevelParentUniqueName11 = BotRetreat.sln
+		SccProjectName11 = BotRetreat.Business.UnitTest
+		SccLocalPath11 = BotRetreat.Business.UnitTest
+		SccProjectUniqueName12 = BotRetreat.Arena.Wpf\\BotRetreat.Arena.Wpf.csproj
+		SccProjectTopLevelParentUniqueName12 = BotRetreat.sln
+		SccProjectName12 = BotRetreat.Arena.Wpf
+		SccLocalPath12 = BotRetreat.Arena.Wpf
+		SccProjectUniqueName13 = BotRetreat.Dashboard.Wpf\\BotRetreat.Dashboard.Wpf.csproj
+		SccProjectTopLevelParentUniqueName13 = BotRetreat.sln
+		SccProjectName13 = BotRetreat.Dashboard.Wpf
+		SccLocalPath13 = BotRetreat.Dashboard.Wpf
+		SccProjectUniqueName14 = BotRetreat.ScriptEditor.Wpf\\BotRetreat.ScriptEditor.Wpf.csproj
+		SccProjectTopLevelParentUniqueName14 = BotRetreat.sln
+		SccProjectName14 = BotRetreat.ScriptEditor.Wpf
+		SccLocalPath14 = BotRetreat.ScriptEditor.Wpf
+		SccProjectUniqueName15 = BotRetreat.Management.Wpf\\BotRetreat.Management.Wpf.csproj
+		SccProjectTopLevelParentUniqueName15 = BotRetreat.sln
+		SccProjectName15 = BotRetreat.Management.Wpf
+		SccLocalPath15 = BotRetreat.Management.Wpf
+		SccProjectUniqueName16 = BotRetreat.Framework.Wpf\\BotRetreat.Framework.Wpf.csproj
+		SccProjectTopLevelParentUniqueName16 = BotRetreat.sln
+		SccProjectName16 = BotRetreat.Framework.Wpf
+		SccLocalPath16 = BotRetreat.Framework.Wpf
+		SccProjectUniqueName17 = BotRetreat.Client\\BotRetreat.Client.csproj
+		SccProjectTopLevelParentUniqueName17 = BotRetreat.sln
+		SccProjectName17 = BotRetreat.Client
+		SccLocalPath17 = BotRetreat.Client
+		SccProjectUniqueName18 = BotRetreat.Routes\\BotRetreat.Routes.csproj
+		SccProjectTopLevelParentUniqueName18 = BotRetreat.sln
+		SccProjectName18 = BotRetreat.Routes
+		SccLocalPath18 = BotRetreat.Routes
+		SccProjectUniqueName19 = BotRetreat.Utilities\\BotRetreat.Utilities.csproj
+		SccProjectTopLevelParentUniqueName19 = BotRetreat.sln
+		SccProjectName19 = BotRetreat.Utilities
+		SccLocalPath19 = BotRetreat.Utilities
+		SccProjectUniqueName20 = BotRetreat.Client.Design\\BotRetreat.Client.Design.csproj
+		SccProjectTopLevelParentUniqueName20 = BotRetreat.sln
+		SccProjectName20 = BotRetreat.Client.Design
+		SccLocalPath20 = BotRetreat.Client.Design
+		SccProjectUniqueName21 = BotRetreat.Web.ScriptValidation\\BotRetreat.Web.ScriptValidation.csproj
+		SccProjectTopLevelParentUniqueName21 = BotRetreat.sln
+		SccProjectName21 = BotRetreat.Web.ScriptValidation
+		SccLocalPath21 = BotRetreat.Web.ScriptValidation
+		SccProjectUniqueName22 = BotRetreat.Web.Common\\BotRetreat.Web.Common.csproj
+		SccProjectTopLevelParentUniqueName22 = BotRetreat.sln
+		SccProjectName22 = BotRetreat.Web.Common
+		SccLocalPath22 = BotRetreat.Web.Common
+		SccProjectUniqueName23 = BotRetreat.Setup\\BotRetreat.Setup.csproj
+		SccProjectTopLevelParentUniqueName23 = BotRetreat.sln
+		SccProjectName23 = BotRetreat.Setup
+		SccLocalPath23 = BotRetreat.Setup
+	EndGlobalSection
+EndGlobal

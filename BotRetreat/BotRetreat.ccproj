@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>2.8</ProductVersion>
+    <ProjectGuid>55bd8914-d8f4-418a-8e3f-319907fb38e0</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BotRetreat</RootNamespace>
+    <AssemblyName>BotRetreat</AssemblyName>
+    <StartDevelopmentStorage>True</StartDevelopmentStorage>
+    <Name>BotRetreat</Name>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- Items for the project -->
+  <ItemGroup>
+    <ServiceDefinition Include="ServiceDefinition.csdef" />
+    <ServiceConfiguration Include="ServiceConfiguration.Local.cscfg" />
+    <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BotRetreat.Web.ScriptValidation\BotRetreat.Web.ScriptValidation.csproj">
+      <Name>BotRetreat.Web.ScriptValidation</Name>
+      <Project>{59c25d17-0964-419e-aee7-a818bb8836e4}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>BotRetreat.Web.ScriptValidation</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\BotRetreat.Web\BotRetreat.Web.csproj">
+      <Name>BotRetreat.Web</Name>
+      <Project>{80d8e22d-31ca-48e4-8311-113617ed35f9}</Project>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <RoleName>BotRetreat.Web</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+    <ProjectReference Include="..\BotRetreat.Worker\BotRetreat.Worker.csproj">
+      <Name>BotRetreat.Worker</Name>
+      <Project>{fe4754f4-3f8b-4d35-afab-14ee8b7a759e}</Project>
+      <Private>True</Private>
+      <RoleType>Worker</RoleType>
+      <RoleName>BotRetreat.Worker</RoleName>
+      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BotRetreat.Web.ScriptValidationContent\" />
+    <Folder Include="BotRetreat.Web.ScriptValidationContent\bin" />
+    <Folder Include="BotRetreat.WebContent\" />
+    <Folder Include="BotRetreat.WebContent\bin" />
+    <Folder Include="BotRetreat.WorkerContent\" />
+    <Folder Include="BotRetreat.WorkerContent\bin" />
+    <Folder Include="Profiles" />
+  </ItemGroup>
+  <ItemGroup>
+    <DiagnosticsConfiguration Include="BotRetreat.Web.ScriptValidationContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="BotRetreat.WebContent\diagnostics.wadcfgx" />
+    <DiagnosticsConfiguration Include="BotRetreat.WorkerContent\diagnostics.wadcfgx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\botretreatProduction.azurePubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BotRetreat.Web.ScriptValidationContent\bin\install.cmd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BotRetreat.Web.ScriptValidationContent\bin\NDP46-KB3045560-Web.exe">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BotRetreat.WebContent\bin\install.cmd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BotRetreat.WebContent\bin\NDP46-KB3045560-Web.exe">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BotRetreat.WorkerContent\bin\install.cmd">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="BotRetreat.WorkerContent\bin\NDP46-KB3045560-Web.exe">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <!-- Import the target files for this project template -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <CloudExtensionsDir Condition=" '$(CloudExtensionsDir)' == '' ">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Windows Azure Tools\2.8\</CloudExtensionsDir>
+  </PropertyGroup>
+  <Import Project="$(CloudExtensionsDir)Microsoft.WindowsAzure.targets" />
+</Project>

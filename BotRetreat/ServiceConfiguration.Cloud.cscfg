@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="BotRetreat" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="BotRetreat.Web">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=jpportalvhdsnhbwj5j0rwbt;AccountKey=szPhxlRPWMpO95ak7hKqN35Xw9sZMG5opgJUs8hnxINr+wiIynZ1wTCQlrQrA/uWdO4bdmnxG9Y1uoEWY83Nsw==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="BotRetreat.Worker">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=jpportalvhdsnhbwj5j0rwbt;AccountKey=szPhxlRPWMpO95ak7hKqN35Xw9sZMG5opgJUs8hnxINr+wiIynZ1wTCQlrQrA/uWdO4bdmnxG9Y1uoEWY83Nsw==" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="BotRetreat.Web.ScriptValidation">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=jpportalvhdsnhbwj5j0rwbt;AccountKey=szPhxlRPWMpO95ak7hKqN35Xw9sZMG5opgJUs8hnxINr+wiIynZ1wTCQlrQrA/uWdO4bdmnxG9Y1uoEWY83Nsw==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
